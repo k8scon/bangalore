@@ -1,0 +1,40 @@
+name: "CI/CD Workflow for k8scon Meetup Website"
+on:
+  push:
+    branches:
+      - master
+    pull_request:
+      branches:
+        - master
+
+jobs:
+  build:
+    name: Build and publish website
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+        with:
+          persist-credentials: false
+      - name: Use Node.js version
+        uses: actions/setup-node@v1
+        with:
+          node-version: '12.x'
+      - name: NPM Install
+        run: npm install
+      - name: Build CSS from SASS
+        run: npm run sass
+      - name: Stage deployment directory
+        run: |
+          mkdir dist
+          cp index.html dist/
+          cp -R img/ dist/
+          cp -R favicon/ dist/
+          cp -R css/ dist/
+          cp -R js/ dist/
+      - name: Deploy to gh-pages
+        uses: JamesIves/github-pages-deploy-action@releases/v3
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: gh-pages
+          FOLDER: dist
