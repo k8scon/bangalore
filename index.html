@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-63326882-3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-63326882-3');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- FAVICON -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="msapplication-config" content="/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
+    <!-- FAVICON -->
+    <title>Rust Meetup Linz</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Rust Meetup Linz">
+    <meta name="twitter:creator" content="@rustlinz">
+    <meta property="og:image" content="https://rust-linz.at/img/rustlinz-opengraph-card.jpg">
+    <meta property="og:image:secure_url" content="https://rust-linz.at/img/rustlinz-opengraph-card.jpg">
+    <meta name="twitter:image" content="https://rust-linz.at/img/rustlinz-opengraph-card.jpg">
+</head>
+
+<body>
+    <nav class="navbar my-nav navbar-dark navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="page-scroll navbar-brand" href="#home">
+                <img src="img/rust-linz-logo-white.svg" alt="Rust Linz" width="40" height="40">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="page-scroll nav-link" href="#home" data-toggle="collapse"
+                            data-target=".navbar-collapse.show">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="page-scroll nav-link" href="#intro" data-toggle="collapse"
+                            data-target=".navbar-collapse.show">Intro</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="page-scroll nav-link" href="#events" data-toggle="collapse"
+                            data-target=".navbar-collapse.show">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="page-scroll nav-link" href="#participation" data-toggle="collapse"
+                            data-target=".navbar-collapse.show">Participation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="page-scroll nav-link" href="#contact" data-toggle="collapse"
+                            data-target=".navbar-collapse.show">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header id="home">
+        <div class="container">
+            <div class="row mb-5 mb-sm-0">
+                <div class="col-sm-8 page-title text-center">
+                    <div>
+                        <h1 class="mb-0">Rust Meetup Linz</h1>
+                        <h2 class="mb-4">It's time for the steel city to Rust!</h2>
+                        <p class="mb-5 mb-sm-0 text-center d-none d-sm-block">
+                            <a class="btn" href="https://www.meetup.com/Rust-Linz/" target="_blank"><i
+                                    class="fab fa-meetup icon"></i>Open Meetup</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-sm-4 title-img-container">
+                    <div>
+                        <img class="title-img" src="img/rust-linz-logo.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="row d-block d-sm-none">
+                <div class="col-12">
+                    <p class="text-center">
+                        <a class="btn" href="https://www.meetup.com/Rust-Linz/" target="_blank"><i
+                                class="fab fa-meetup icon"></i>Open Meetup</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="intro" class="highlight-1">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <h2>Intro</h2>
+                    <p class="lead">In the last years, Rust has become a popular programming language. Many use it, even
+                        more are eager to learn it. Linz has
+                        meetups for many programming languages, but Rust has been missing - and that is about to change.
+                    </p>
+                    <p class="text-center highlight-text">We are thrilled to announce the launch of a Rust meetup in
+                        Linz.</p>
+                    <p>The goal is to bring together people who are using Rust or who are curious and want to learn
+                        about it. We invite everybody to contribute
+                        short talks about the Rust programming language or related technologies. It might be an
+                        interesting feature you discovered, a project
+                        you have been working on, a finding of yours from a real-world project, a Rust-related book that
+                        you want others to know about, anything
+                        that you want to contribute to the local Rust community is welcome. Before and after the talks
+                        there will be time for informal chatting.
+                    </p>
+                    <p>Because of the current Covid-19 situation, the <strong>Rust meetup Linz will happen online in the
+                            foreseeable future</strong>. On the
+                        long run, in-person meetups with streaming of the delivered talks are planned.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="events">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <h2>Events</h2>
+                    <p>In the last years, Rust has become a popular programming language. Many use it, even more people
+                        are eager to learn it. Linz has meetups
+                        for many programming languages, but Rust has been missing - and that is about to change.</p>
+                    <p>Our goal is to bring together people who are using Rust or who are curious and want to learn
+                        about it. We invite everybody to contribute
+                        short talks about the Rust programming language or related technologies. It might be an
+                        interesting feature you discovered, a project
+                        you have been working on, a finding of yours from a real-world project, a Rust-related book that
+                        you want others to know about, anything
+                        that you want to contribute to the local Rust community is welcome. Before and after the talks
+                        there will be time for informal chatting.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="events" class="alt">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <h3>Thursday, June 30, 2022 17:30 CEST</h3>
+                    <p>Hello dear Rustaceans! Our June meetup will be on the 30th and we already have one great guest
+                        speaker. The second talk is still TBD. Stay tuned, we will update the agenda as soon as we have
+                        finished planning the June meetup.
+                    </p>
+
+                    <p class="text-center">
+                        <!-- <a class="btn" href="https://ti.to/rust-linz/rust-linz-meetup-12-anniversary" target="_blank"><i
+                                class="fas fa-user-friends icon"></i>In-Person: Register at
+                            Tito</a>
+                        &nbsp;&nbsp;&nbsp; -->
+                        <a class="btn" href="https://www.meetup.com/de-DE/rust-linz/events/286029968/"
+                            target="_blank"><i class="fab fa-meetup icon"></i>Register at
+                            Meetup</a>
+                    </p>
+                    <h4>Join Us</h4>
+                    <p>
+                        <!-- <b>Youtube</b>: will be announced soon<br /> -->
+                        <b>Youtube</b>: <a href="https://youtu.be/K5QOh4LVoUs"
+                            target="_blank">https://youtu.be/K5QOh4LVoUs</a><br />
+                        <b>Chat on Discord</b>: <a href="https://discord.gg/T27Ms2f"
+                            target="_blank">https://discord.gg/T27Ms2f</a>
+                    </p>
+                    <h4>Schedule</h4>
+                    <!-- <p>More details will be announced soon.</p> -->
+                    <table class="table">
+                        <tr>
+                            <td>
+                                <h5>17:30</h5>
+                            </td>
+                            <td>
+                                <h5>Welcome and Introduction</h5>
+                                <p>We will start the night with the usual welcome round and some community news.</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h5>17:40</h5>
+                            </td>
+                            <td>
+                                <div class="row">
+                                    <div class="col-12 col-md-8 session">
+                                        <h5>How AWS is building the Rust SDK and how you can use it today
+                                            by Zelda Hessler</h5>
+                                        <p>Last year, AWS launched a new SDK for Rust in developer preview, enabling
+                                            customers developing in Rust to use the language constructs they are used
+                                            to, and to provide customers new to Rust an SDK that behaves similarly to
+                                            SDKs they have used in other language environments. Zelda, a member of the
+                                            AWS Rust SDK team, will be giving a whirlwind tour of the AWS Rust SDK. In
+                                            this talk, she’ll cover:</p>
+
+                                        <ul>
+                                            <li>How to use the SDK to make requests</li>
+                                            <li>What’s actually happening when using the SDK to make requests</li>
+                                            <li>How the AWS Rust SDK team generates SDKs for 300+ Services</li>
+                                            <li>What to do if you’re interested in contributing to the SDK</li>
+                                        </ul>
+
+
+                                        <p>The talk will then close with a Q&A.</p>
+
+                                        <h6>About Zelda Hessler</h6>
+                                        <p>Zelda Hessler has been a Rust enthusiast since 2015 and a member of the AWS
+                                            Rust SDK team since 2021.
+                                        </p>
+
+                                        <p class="speaker-links">
+                                            <a href="https://github.com/awslabs/aws-sdk-rust" title=" Company website"
+                                                target="_blank"><i class="fas fa-building icon"
+                                                    aria-hidden="true"></i></a>
+                                            <a href="mailto:zelda.hessler@pm.me" title="Email" target="_blank"><i
+                                                    class="fas fa-envelope icon" aria-hidden="true"></i></a>
+                                            <a href="https://www.zeldas.page/" title="Blog" target="_blank"><i
+                                                    class="fas fa-blog icon" aria-hidden="true"></i></a>
+                                        </p>
+
+                                        <!-- <p class="speaker-links">
+                                            <a href="..." title=" Company website"
+                                                target="_blank"><i class="fas fa-building icon"
+                                                    aria-hidden="true"></i></a>
+                                            <a href="mailto:..." title="Email"
+                                                target="_blank"><i class="fas fa-envelope icon"
+                                                    aria-hidden="true"></i></a>
+                                            <a href="..." title="Blog" target="_blank"><i
+                                                    class="fas fa-blog icon" aria-hidden="true"></i></a>
+                                            <a href="https://twitter.com/..." title="Twitter" target="_blank"><i
+                                                    class="fab fa-twitter icon" aria-hidden="true"></i></a>
+                                            <a href="https://github.com/..." title="GitHub" target="_blank"><i
+                                                    class="fab fa-github icon" aria-hidden="true"></i></a>
+                                        </p> -->
+                                    </div>
+                                    <div class="col-12 col-md-4 speaker-img">
+                                        <div class="img-box">
+                                            <img
+                                                src="https://sessionize.com/image/4e16-200o200o2-D9q2QrdG5J4oiYRGP7Q8Ff.jpg" />
+                                        </div>
+                                        <h5>Zelda Hessler</h5>
+                                        <h6></h6>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h5>18:20</h5>
+                            </td>
+                            <td>
+                                <div class="row">
+                                    <div class="col-12 col-md-8 session">
+                                        <h5>Constant Fun With Rust</h5>
+                                        <p>Everybody knows constants from other programming languages. But as so often,
+                                            Rust is different and knows a lot of tricks regarding constants that other
+                                            languages don't. Rust's *const fn* recently got new features (v1.61), so we
+                                            decided to do an overview session about consts and constant functions in
+                                            Rust. This is a beginner-friendly session for people who are starting with
+                                            Rust or haven't taken a deeper look into constants and *const fn* in Rust.
+                                        </p>
+
+                                        <h6>About Rainer Stropek</h6>
+                                        <p>Rainer is chairman of the Coding Club Linz and co-founder of the Rust meetup
+                                            in Linz. Rainer has been exploring Rust
+                                            for some months and would like to share his learnings about Cargo, Rust's
+                                            package management and build tool.</p>
+                                        <p class="speaker-links">
+                                            <a href="https://timecockpit.com" title="Company website" target="_blank"><i
+                                                    class="fas fa-building icon" aria-hidden="true"></i></a>
+                                            <a href="https://www.software-architects.com" title="Blog"
+                                                target="_blank"><i class="fas fa-blog icon" aria-hidden="true"></i></a>
+                                            <a href="https://twitter.com/rstropek" title="Twitter" target="_blank"><i
+                                                    class="fab fa-twitter icon" aria-hidden="true"></i></a>
+                                            <a href="https://www.linkedin.com/in/rainerstropek/" title="LinkedIn"
+                                                target="_blank"><i class="fab fa-linkedin-in icon"
+                                                    aria-hidden="true"></i></a>
+                                        </p>
+                                        <!-- <p class="speaker-links">
+                                            <a href="..." title=" Company website"
+                                                target="_blank"><i class="fas fa-building icon"
+                                                    aria-hidden="true"></i></a>
+                                            <a href="mailto:..." title="Email"
+                                                target="_blank"><i class="fas fa-envelope icon"
+                                                    aria-hidden="true"></i></a>
+                                            <a href="..." title="Blog" target="_blank"><i
+                                                    class="fas fa-blog icon" aria-hidden="true"></i></a>
+                                            <a href="https://twitter.com/..." title="Twitter" target="_blank"><i
+                                                    class="fab fa-twitter icon" aria-hidden="true"></i></a>
+                                            <a href="https://github.com/..." title="GitHub" target="_blank"><i
+                                                    class="fab fa-github icon" aria-hidden="true"></i></a>
+                                        </p> -->
+                                    </div>
+                                    <div class="col-12 col-md-4 speaker-img">
+                                        <div class="img-box">
+                                            <img
+                                                src="https://sessionize.com/image/c0b7-200o200o2-d1-fc5e-4fb8-b882-c3878168e8c7.7a8d2e47-0ebb-48c3-9ec2-cccb0acb6ee4.jpg" />
+                                        </div>
+                                        <h5>Rainer Stropek</h5>
+                                        <h6>software architects</h6>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="participation" class="highlight-2">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <h2>Participation</h2>
+                    <p class="lead">Do you want to deliver a talk at the Rust meetup Linz? Great! Please enter your
+                        suggested topic in Sessionize.</p>
+                    <p class="text-center"><a class="btn" href="https://sessionize.com/rust-linz/"
+                            target="_blank">Submit Talk in Sessionize</a></p>
+                    <p>If possible, talks should be delivered in English. If you are not comfortable speaking English,
+                        German is an option, too. Rust is still a
+                        rather young language. Thus, not many people consider themselves as Rust experts. Because of
+                        this, we are not just looking for deep dive
+                        content. Introductory sessions are great, too, so that beginners, students, and hobbyists have
+                        the opportunity to start their Rust
+                        journey. <strong></p>
+                    <p>You do not need to be a Rust pro to talk at our meetup!</strong> If you have something
+                        Rust-related to share that you are passionate
+                        about, we would love to have you as a speaker.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="videos" class="highlight-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <h2>Previous Talks</h2>
+                    <p class="lead">You can watch all previous talks on YouTube.</p>
+                    <table class="table table-bottom-line">
+                        <tr>
+                            <td>April 28, 2022</td>
+                            <td>Async Rust: Portability and Interoperability</td>
+                            <td>Nick R. Cameron</td>
+                            <td><a class="btn"
+                                    href="https://www.youtube.com/watch?v=jxxLQsxJve8&list=PL85XCvVPmGQgL3lqQD5ivLNLfdAdxbE_u"
+                                    target="_blank">Watch
+                                    on YouTube</a></td>
+                        </tr>
+                        <tr>
+                            <td>April 28, 2022</td>
+                            <td>Is Rust a great language for building Kubernetes ecosystem?</td>
+                            <td>Deepu K Sasidharan</td>
+                            <td><a class="btn"
+                                    href="https://www.youtube.com/watch?v=9icztoT4JVs&list=PL85XCvVPmGQgL3lqQD5ivLNLfdAdxbE_u"
+                                    target="_blank">Watch
+                                    on YouTube</a></td>
+                        </tr>
+                        <tr>
+                            <td>March 24, 2022</td>
+                            <td>Introduction to WAGI</td>
+                            <td>Rainer Stropek, Stefan Baumgartner</td>
+                            <td><a class="btn"
+                                    href="https://www.youtube.com/watch?v=9NDwHBjLlhQ&list=PL85XCvVPmGQgL3lqQD5ivLNLfdAdxbE_u"
+                                    target="_blank">Watch on YouTube</a></td>
+                        </tr>
+                        <tr>
+                            <td>March 24, 2022</td>
+                            <td>Rust for Linux: Status and Wishlist</td>
+                            <td>Miguel Ojeda, Wedson Almeida Filho</td>
+                            <td><a class="btn"
+                                    href="https://www.youtube.com/watch?v=fVEeqo40IyQ&list=PL85XCvVPmGQgL3lqQD5ivLNLfdAdxbE_u"
+                                    target="_blank">Watch on YouTube</a></td>
+                        </tr>
+                        <tr>
+                            <td>February 24, 2022</td>
+                            <td>Runtime-agnostic async crates</td>
+                            <td>Zeeshan Ali</td>
+                            <td><a class="btn"
+                                    href="https://www.youtube.com/watch?v=w1vKAUor-4o&list=PL85XCvVPmGQgL3lqQD5ivLNLfdAdxbE_u"
+                                    target="_blank">Watch on YouTube</a></td>
+                        </tr>
+                        <tr>
+                            <td>February 24, 2022</td>
+                            <td>Tauri Foundations</td>
+                            <td>Daniel Thompson-Yvetot</td>
+                            <td><a class="btn"
+                                    href="https://www.youtube.com/watch?v=u4OsO6dow0c&list=PL85XCvVPmGQgL3lqQD5ivLNLfdAdxbE_u"
+                                    target="_blank">Watch on YouTube</a></td>
+                        </tr>
+                        <tr>
+                            <td>January 27, 2022</td>
+                            <td>curl with Rust</td>
+                            <td>Daniel Stenberg</td>
+                            <td><a class="btn"
+                                    href="https://www.youtube.com/watch?v=HFH2vZRTKrA&list=PL85XCvVPmGQgL3lqQD5ivLNLfdAdxbE_u"
+                                    target="_blank">Watch on YouTube</a></td>
+                        </tr>
+                        <tr>
+                            <td>January 27, 2022</td>
+                            <td>Error Handling In Rust - A Pragmatic Approach</td>
+                            <td>Luca Palmieri</td>
+                            <td><a class="btn"
+                                    href="https://www.youtube.com/watch?v=jpVzSse7oJ4&list=PL85XCvVPmGQgL3lqQD5ivLNLfdAdxbE_u"
+                                    target="_blank">Watch on YouTube</a></td>
+                        </tr>
+                        <tr>
+                            <td>December 16, 2021</td>
+                            <td>From Zero to no_std in One Session</td>
+                            <td>Marco Amann</td>
+                            <td><a class="btn"
+                                    href="https://www.youtube.com/watch?v=Pu4MZmB0E28&list=PL85XCvVPmGQgL3lqQD5ivLNLfdAdxbE_u"
+                                    target="_blank">Watch on YouTube</a></td>
+                        </tr>
+                        <tr>
+                            <td>November 25, 2021</td>
+                            <td>Serde Shenanigans</td>
+                            <td>Armin Ronacher</td>
+                            <td><a class="btn"
+                                    href="https://www.youtube.com/watch?v=UhZGYS13twc&list=PL85XCvVPmGQgL3lqQD5ivLNLfdAdxbE_u"
+                                    target="_blank">Watch on YouTube</a></td>
+                        </tr>
+                        <tr>
+                            <td>November 25, 2021</td>
+                            <td>WebAssembly beyond the browser</td>
+                            <td>Thorsten Hans</td>
+                            <td><a class="btn"
+                                    href="https://www.youtube.com/watch?v=o6qe4lw9-8c&list=PL85XCvVPmGQgL3lqQD5ivLNLfdAdxbE_u"
+                                    target="_blank">Watch on YouTube</a></td>
+                        </tr>
+                        <tr>
+                            <td>November 25, 2021</td>
+                            <td>Advent of Code</td>
+                            <td>Rainer Stropek, Fred Morcos</td>
+                            <td><a class="btn"
+                                    href="https://www.youtube.com/watch?v=bejThbzAYOA&list=PL85XCvVPmGQgL3lqQD5ivLNLfdAdxbE_u"
+                                    target="_blank">Watch on YouTube</a></td>
+                        </tr>
+                        <tr>
+                            <td>October 28, 2021</td>
+                            <td>Tokio, Warp, and Websockets</td>
+                            <td>Stefan Baumgartner</td>
+                            <td><a class="btn"
+                                    href="https://www.youtube.com/watch?v=fuiFycJpCBw&list=PL85XCvVPmGQgL3lqQD5ivLNLfdAdxbE_u"
+                                    target="_blank">Watch on YouTube</a></td>
+                        </tr>
+                        <tr>
+                            <td>October 28, 2021</td>
+                            <td>Rust Closures</td>
+                            <td>Rainer Stropek</td>
+                            <td><a class="btn"
+                                    href="https://www.youtube.com/watch?v=bgZa9VRBhYU&list=PL85XCvVPmGQgL3lqQD5ivLNLfdAdxbE_u"
+                                    target="_blank">Watch on YouTube</a></td>
+                        </tr>
+                        <tr>
+                            <td>September 30, 2021</td>
+                            <td>Send Your Microservices to the Autobahn w/ gRPC and Rust</td>
+                            <td>Filip Kieres</td>
+                            <td><a class="btn"
+                                    href="https://www.youtube.com/watch?v=i-eZ17Z48YI&list=PL85XCvVPmGQgL3lqQD5ivLNLfdAdxbE_u"
+                                    target="_blank">Watch on YouTube</a></td>
+                        </tr>
+                        <tr>
+                            <td>September 30, 2021</td>
+                            <td>Futures Concurrency in the Future, Maybe</td>
+                            <td>Yoshua Wuyts</td>
+                            <td><a class="btn"
+                                    href="https://www.youtube.com/watch?v=QlPDI9IsSXU&list=PL85XCvVPmGQgL3lqQD5ivLNLfdAdxbE_u"
+                                    target="_blank">Watch on YouTube</a></td>
+                        </tr>
+                        <tr>
+                            <td>August 26, 2021</td>
+                            <td>Rust Iterators</td>
+                            <td>Rainer Stropek</td>
+                            <td><a class="btn"
+                                    href="https://www.youtube.com/watch?v=R0ufQe5DRaw&list=PL85XCvVPmGQgL3lqQD5ivLNLfdAdxbE_u"
+                                    target="_blank">Watch on YouTube</a></td>
+                        </tr>
+                        <tr>
+                            <td>July 29, 2021</td>
+                            <td>Traits - Not Your Grandparents' Interfaces</td>
+                            <td>Rainer Stropek</td>
+                            <td><a class="btn"
+                                    href="https://www.youtube.com/watch?v=B0fL3WmJZsc&list=PL85XCvVPmGQgL3lqQD5ivLNLfdAdxbE_u"
+                                    target="_blank">Watch on YouTube</a></td>
+                        </tr>
+                        <tr>
+                            <td>July 29, 2021</td>
+                            <td>Serverless Rust</td>
+                            <td>Stefan Baumgartner</td>
+                            <td><a class="btn"
+                                    href="https://www.youtube.com/watch?v=EXqqsCss8Gk&list=PL85XCvVPmGQgL3lqQD5ivLNLfdAdxbE_u"
+                                    target="_blank">Watch on YouTube</a></td>
+                        </tr>
+
+                        <tr>
+                            <td>June 24, 2021</td>
+                            <td>A New Path for Your Shell</td>
+                            <td>Jonathan Turner</td>
+                            <td><a class="btn"
+                                    href="https://www.youtube.com/watch?v=pNPQ4_tTKuc&list=PL85XCvVPmGQgL3lqQD5ivLNLfdAdxbE_u"
+                                    target="_blank">Watch on YouTube</a></td>
+                        </tr>
+                        <tr>
+                            <td>June 24, 2021</td>
+                            <td>How to learn Rust</td>
+                            <td>Tim McNamara</td>
+                            <td><a class="btn"
+                                    href="https://www.youtube.com/watch?v=sDtQaO5_SOw&list=PL85XCvVPmGQgL3lqQD5ivLNLfdAdxbE_u"
+                                    target="_blank">Watch on YouTube</a></td>
+                        </tr>
+                        <tr>
+                            <td>May 27, 2021</td>
+                            <td>Rust for Medical Visualization</td>
+                            <td>Harald Reingruber</td>
+                            <td><a class="btn"
+                                    href="https://www.youtube.com/watch?v=mf_dbFHdpt0&list=PL85XCvVPmGQgL3lqQD5ivLNLfdAdxbE_u"
+                                    target="_blank">Watch on YouTube</a></td>
+                        </tr>
+                        <tr>
+                            <td>May 27, 2021</td>
+                            <td>Creative Rust</td>
+                            <td>Lisa Passing</td>
+                            <td><a class="btn"
+                                    href="https://www.youtube.com/watch?v=VJUhINt5dF0&list=PL85XCvVPmGQgL3lqQD5ivLNLfdAdxbE_u"
+                                    target="_blank">Watch on YouTube</a></td>
+                        </tr>
+                        <tr>
+                            <td>April 22, 2021</td>
+                            <td>Learning Rust with Game Development</td>
+                            <td>Herbert Wolverson</td>
+                            <td><a class="btn"
+                                    href="https://www.youtube.com/watch?v=79GyLlXAk-0&list=PL85XCvVPmGQgL3lqQD5ivLNLfdAdxbE_u"
+                                    target="_blank">Watch on YouTube</a></td>
+                        </tr>
+                        <tr>
+                            <td>April 22, 2021</td>
+                            <td>Leveraging Rust to build cross-platform libraries</td>
+                            <td>Jan-Erik Rediger</td>
+                            <td><a class="btn"
+                                    href="https://www.youtube.com/watch?v=peu-rtN4358&list=PL85XCvVPmGQgL3lqQD5ivLNLfdAdxbE_u"
+                                    target="_blank">Watch on YouTube</a></td>
+                        </tr>
+                        <tr>
+                            <td>April 26, 2021</td>
+                            <td>Rust, Kubernetes, and the Cloud</td>
+                            <td>Ryan Levick & Thomas Taylor</td>
+                            <td><a class="btn"
+                                    href="https://www.youtube.com/watch?v=Uqi9xwlFbEc&list=PL85XCvVPmGQgL3lqQD5ivLNLfdAdxbE_u"
+                                    target="_blank">Watch on YouTube</a></td>
+                        </tr>
+                        <tr>
+                            <td>March 18, 2021</td>
+                            <td>The Rusting Cloud</td>
+                            <td>Thomas Taylor</td>
+                            <td><a class="btn"
+                                    href="https://www.youtube.com/watch?v=my3ZjRXVRcs&list=PL85XCvVPmGQgL3lqQD5ivLNLfdAdxbE_u"
+                                    target="_blank">Watch on YouTube</a></td>
+                        </tr>
+                        <tr>
+                            <td>March 18, 2021</td>
+                            <td>Ownership and Borrowing from a Systems Construction PoV</td>
+                            <td>Florian Gilcher</td>
+                            <td><a class="btn"
+                                    href="https://www.youtube.com/watch?v=8bZXx2jzfpU&list=PL85XCvVPmGQgL3lqQD5ivLNLfdAdxbE_u"
+                                    target="_blank">Watch on YouTube</a></td>
+                        </tr>
+                        <tr>
+                            <td>February 11, 2021</td>
+                            <td>Comparing performance of range- and counter-based loops</td>
+                            <td>Will Hawkins</td>
+                            <td><a class="btn"
+                                    href="https://www.youtube.com/watch?v=pP66t16BfUA&list=PL85XCvVPmGQgL3lqQD5ivLNLfdAdxbE_u&index=15"
+                                    target="_blank">Watch on YouTube</a></td>
+                        </tr>
+                        <tr>
+                            <td>February 11, 2021</td>
+                            <td>Getting Started with Open Source</td>
+                            <td>Celia Lewis</td>
+                            <td><a class="btn"
+                                    href="https://www.youtube.com/watch?v=P3X3J-8ICAo&list=PL85XCvVPmGQgL3lqQD5ivLNLfdAdxbE_u&index=14"
+                                    target="_blank">Watch on YouTube</a></td>
+                        </tr>
+                        <tr>
+                            <td>January 21, 2021</td>
+                            <td>Mosaic, A Rusty Terminal Workspace</td>
+                            <td>Aram Drevekenin</td>
+                            <td><a class="btn"
+                                    href="https://www.youtube.com/watch?v=Q-te_UBzzjo&list=PL85XCvVPmGQgL3lqQD5ivLNLfdAdxbE_u&index=13"
+                                    target="_blank">Watch on YouTube</a></td>
+                        </tr>
+                        <tr>
+                            <td>January 21, 2021</td>
+                            <td>Unleash the power of your comments!</td>
+                            <td>Karl Grasegger</td>
+                            <td><a class="btn"
+                                    href="https://www.youtube.com/watch?v=Uy6lrEbB5ug&list=PL85XCvVPmGQgL3lqQD5ivLNLfdAdxbE_u&index=12"
+                                    target="_blank">Watch on YouTube</a></td>
+                        </tr>
+                        <tr>
+                            <td>Dezember 17, 2020</td>
+                            <td>Atomic Counters and Cache Lines</td>
+                            <td>Stefan Schindler</td>
+                            <td><a class="btn"
+                                    href="https://www.youtube.com/watch?v=bSAIne9wSkQ&list=PL85XCvVPmGQgL3lqQD5ivLNLfdAdxbE_u&index=11"
+                                    target="_blank">Watch on YouTube</a></td>
+                        </tr>
+                        <tr>
+                            <td>Dezember 17, 2020</td>
+                            <td>Web APIs with Rocket</td>
+                            <td>Rainer Stropek</td>
+                            <td><a class="btn"
+                                    href="https://www.youtube.com/watch?v=2RWXeosWhAQ&list=PL85XCvVPmGQgL3lqQD5ivLNLfdAdxbE_u&index=10"
+                                    target="_blank">Watch on YouTube</a></td>
+                        </tr>
+                        <tr>
+                            <td>Dezember 17, 2020</td>
+                            <td>The Exercist</td>
+                            <td>Stefan Baumgartner</td>
+                            <td><a class="btn"
+                                    href="https://www.youtube.com/watch?v=PItbLXtZ18o&list=PL85XCvVPmGQgL3lqQD5ivLNLfdAdxbE_u&index=9"
+                                    target="_blank">Watch on YouTube</a></td>
+                        </tr>
+
+
+                        <tr>
+                            <td>November 12, 2020</td>
+                            <td>Trusted Computing with Rust and Intel SGX</td>
+                            <td>Claus Matzinger</td>
+                            <td><a class="btn"
+                                    href="https://www.youtube.com/watch?v=bAYcZ2eAHkA&list=PL85XCvVPmGQgL3lqQD5ivLNLfdAdxbE_u&index=8"
+                                    target="_blank">Watch on YouTube</a></td>
+                        </tr>
+                        <tr>
+                            <td>November 12, 2020</td>
+                            <td>Building a web extension in Rust</td>
+                            <td>Karl Grasegger</td>
+                            <td><a class="btn"
+                                    href="https://www.youtube.com/watch?v=m8DqHZK27X0&list=PL85XCvVPmGQgL3lqQD5ivLNLfdAdxbE_u&index=7"
+                                    target="_blank">Watch on YouTube</a></td>
+                        </tr>
+                        <tr>
+                            <td>October 8, 2020</td>
+                            <td>Writing a Kernel Driver with Rust</td>
+                            <td>Matthias Heiden</td>
+                            <td><a class="btn"
+                                    href="https://www.youtube.com/watch?v=wREGR7QQHco&list=PL85XCvVPmGQgL3lqQD5ivLNLfdAdxbE_u&index=6"
+                                    target="_blank">Watch on YouTube</a></td>
+                        </tr>
+                        <tr>
+                            <td>October 8, 2020</td>
+                            <td>How not to Rely on Inheritance</td>
+                            <td>Valentin Tolmer</td>
+                            <td><a class="btn"
+                                    href="https://www.youtube.com/watch?v=m6Gee5kNe7U&list=PL85XCvVPmGQgL3lqQD5ivLNLfdAdxbE_u&index=5"
+                                    target="_blank">Watch on YouTube</a></td>
+                        </tr>
+                        <tr>
+                            <td>September 17, 2020</td>
+                            <td>Embedded Rust</td>
+                            <td>Roland Ruckerbauer</td>
+                            <td><a class="btn"
+                                    href="https://www.youtube.com/watch?v=xY342ACNXFg&list=PL85XCvVPmGQgL3lqQD5ivLNLfdAdxbE_u&index=4"
+                                    target="_blank">Watch on YouTube</a></td>
+                        </tr>
+                        <tr>
+                            <td>September 17, 2020</td>
+                            <td>Get to Know Rust</td>
+                            <td>Meaghan Lewis</td>
+                            <td><a class="btn"
+                                    href="https://www.youtube.com/watch?v=GDbkrsEI6qA&list=PL85XCvVPmGQgL3lqQD5ivLNLfdAdxbE_u&index=3"
+                                    target="_blank">Watch on YouTube</a></td>
+                        </tr>
+                        <tr>
+                            <td>August 6, 2020</td>
+                            <td>Why should I care about Rust?</td>
+                            <td>Ryan Levick</td>
+                            <td><a class="btn"
+                                    href="https://www.youtube.com/watch?v=OhCjnyBc448&list=PL85XCvVPmGQgL3lqQD5ivLNLfdAdxbE_u&index=2&t=0s"
+                                    target="_blank">Watch on YouTube</a></td>
+                        </tr>
+                        <tr>
+                            <td>August 6, 2020</td>
+                            <td>Cargo - Introduction in Rust's Package Manager</td>
+                            <td>Rainer Stropek</td>
+                            <td><a class="btn"
+                                    href="https://www.youtube.com/watch?v=X78zccoCylA&list=PL85XCvVPmGQgL3lqQD5ivLNLfdAdxbE_u&index=3&t=22s"
+                                    target="_blank">Watch on YouTube</a></td>
+                        </tr>
+                    </table>
+                    <p class="text-center mt-5"><a class="btn"
+                            href="https://www.youtube.com/playlist?list=PL85XCvVPmGQgL3lqQD5ivLNLfdAdxbE_u"
+                            target="_blank">Rust
+                            Linz YouTube Playlist</a></p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="alt">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm">
+                    <h2>Contact</h2>
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <input type="email" placeholder="E-Mail" name="email" id="contact-email" required>
+                            <div class="invalid-feedback">Please enter a valid email address.</div>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Message" rows="5" name="message" id="contact-text"
+                                required></textarea>
+                            <div class="invalid-feedback">Please enter a message.</div>
+                        </div>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-primary"
+                                onclick="sendContactForm('Contact Form'); return false;">Send message</button>
+                        </div>
+                    </form>
+                    <div id="contact-success" class="alert alert-success mt-4">
+                        <p>The message was sent successfully. We will contact you as soon as possible.</p>
+                    </div>
+                    <div id="contact-error" class="alert alert-danger mt-4">
+                        <p>The message could not be sent. Please try again later or send a mail to <a
+                                href="mailto:info@rust-linz.at">info@linz.coderdojo.net</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-xl-3">
+                    <h4>Organizer</h4>
+                    <p>Coding Club Linz<br> Birkenweg 16<br> 4060 Leonding<br>
+                        <a href="mailto:info@rust-linz.at">info@rust-linz.at</a>
+                    </p>
+                    <p class="mt-4"><img src="img/logo-coding-club-linz-white.svg" width="130"></p>
+                </div>
+                <div class="col-md-4 col-xl-6">
+                    <h4>Code Of Conduct</h4>
+                    <p>The Rust Meetup Linz uses the <a href="https://berlincodeofconduct.org/">Berlin Code of
+                            Conduct</a>. Our primary goal is to be inclusive
+                        to the largest number of contributors, with the most varied and diverse backgrounds possible.
+                    </p>
+                </div>
+                <div class="col-md-4 col-xl-3">
+                    <h4>Social</h4>
+                    <p><a href="https://twitter.com/rustlinz" target="_blank"><i class="fab fa-twitter icon"></i></a>
+                        <a href="https://www.meetup.com/de-DE/Rust-Linz/" target="_blank"><i
+                                class="fab fa-meetup icon"></i></a>
+                        <a href="https://discord.gg/T27Ms2f" target="_blank"><i class="fab fa-discord icon"></i></a>
+                    </p>
+                    <p class="mt-4">
+                    <div class="sponsored-by mb-1">Sponsored by</div><img src="img/logo-microsoft.png" width="130"></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/d9ebd98690.js" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

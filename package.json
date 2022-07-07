@@ -1,0 +1,24 @@
+{
+  "name": "rust-linz",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "node-sass sass/style.scss css/style.css",
+    "sass-watch": "node-sass --watch sass/style.scss css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coding-club-linz/rust-linz.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/coding-club-linz/rust-linz/issues"
+  },
+  "homepage": "https://github.com/coding-club-linz/rust-linz#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
